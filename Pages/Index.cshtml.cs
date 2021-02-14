@@ -1,7 +1,9 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Net.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
@@ -20,6 +22,8 @@ namespace aplikacja_pogodowa.Pages
 
     public class IndexModel : PageModel
     {
+        static HttpClient client = new HttpClient();
+
         [BindProperty]
         public WheatherModel Weather { get; set; }
         private readonly ILogger<IndexModel> _logger;
@@ -31,6 +35,9 @@ namespace aplikacja_pogodowa.Pages
 
         public void OnGet(string city, string country)
         {
+            var result = client
+            .GetAsync("httpp://api.openweathermap.org/data/2.5/weather?q=warsaw, poland&appid=431f246a50ff4f5cdc59754224cc9d30&units=metric").Result;
+            
             Weather = new WheatherModel
             {
                 City= city, 
