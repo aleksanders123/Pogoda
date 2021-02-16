@@ -1,29 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\aplikacja_pogodowa.csproj": {}
+    "/Users/michalgredziak/Documents/GitHub/Pogoda/aplikacja_pogodowa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\aplikacja_pogodowa.csproj": {
+    "/Users/michalgredziak/Documents/GitHub/Pogoda/aplikacja_pogodowa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\aplikacja_pogodowa.csproj",
+        "projectUniqueName": "/Users/michalgredziak/Documents/GitHub/Pogoda/aplikacja_pogodowa.csproj",
         "projectName": "aplikacja_pogodowa",
-        "projectPath": "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\aplikacja_pogodowa.csproj",
-        "packagesPath": "C:\\Users\\Ania\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\obj\\",
+        "projectPath": "/Users/michalgredziak/Documents/GitHub/Pogoda/aplikacja_pogodowa.csproj",
+        "packagesPath": "/Users/michalgredziak/.nuget/packages/",
+        "outputPath": "/Users/michalgredziak/Documents/GitHub/Pogoda/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ania\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/michalgredziak/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.0"
+          "net5.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.0": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -34,7 +35,14 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
         }
       }
     }

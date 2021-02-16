@@ -4,11 +4,54 @@
     ViewData["Title"] = "Home page";
 }
 
+<div class="container">
+    <div class="row">
+        &nbsp;
+    </div>
+    <div class="row">
 
-<div class="text-center">
-    <p>@Model.Weather.Temperature</p>
-    <p>@Model.Weather.City</p>
-    <p>@Model.Weather.Country</p>
+        <div class="col-sm">
+            <input value="@(Model.Weather.Location)" type="text" class="form-control" id="locationInput">
+        </div>
+        <div class="col-sm">
+            <input id="getWeatherBtn" type="submit" value="Pobierz prognozę" class="btn btn-primary" />
+        </div>
+    </div>
+    <div class="row">
+        <p></p>
+    </div>
+    <div class="row">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>Temperatura</td>
+                    <td>@Model.Weather.Temperature</td>
+                </tr>
+                <tr>
+                    <td>Ciśnienie</td>
+                    <td>@Model.Weather.Pressure</td>
+                </tr>
+                <tr>
+                    <td>Wilgotność</td>
+                    <td>@Model.Weather.Humidity</td>
+                </tr>
 
-
+            </tbody>
+        </table>
+    </div>
 </div>
+</div>
+<form id="selectLocationForm" action="/">
+    <input type="hidden" name="location" id="locationHid" value="" />
+</form>
+
+<script>
+    $(document).ready(function () {
+        $('#getWeatherBtn').click(function () {
+
+            $('#locationHid').val($('#locationInput').val());
+
+            $('#selectLocationForm').submit();
+        });
+    })
+</script>

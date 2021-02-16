@@ -12,8 +12,7 @@ namespace aplikacja_pogodowa.Pages
 {
     public class WheatherModel
     {
-        public string City { get; set; }
-        public string Country { get; set; }
+        public string Location { get; set; }
         public double Temperature { get; set; }
         public int Humidity { get; set; }
         public int Pressure { get; set; }
@@ -33,16 +32,16 @@ namespace aplikacja_pogodowa.Pages
             _logger = logger;
         }
 
-        public void OnGet(string city, string country)
+        public void OnGet(string location)
         {
             var result = client
-            .GetAsync("httpp://api.openweathermap.org/data/2.5/weather?q=warsaw, poland&appid=431f246a50ff4f5cdc59754224cc9d30&units=metric").Result;
-            
+            .GetAsync($"http://api.openweathermap.org/data/2.5/weather?q={location}&appid=431f246a50ff4f5cdc59754224cc9d30&units=metric").Result;
+
             Weather = new WheatherModel
             {
-                City= city, 
-                Country = country,
-                Temperature= 20
+                Location = location,
+                Temperature = 20,
+                Humidity = 55
             };
         }
     }
