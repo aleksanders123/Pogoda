@@ -236,7 +236,7 @@
       "outputPath": "/Users/michalgredziak/Documents/GitHub/Pogoda/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/michalgredziak/.nuget/NuGet/NuGet.Config"
+        "/Users/michalgredziak/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

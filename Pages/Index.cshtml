@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
+<h1>Prognoza pogody</h1>
 <div class="container">
     <div class="row">
         &nbsp;
@@ -11,7 +11,7 @@
     <div class="row">
 
         <div class="col-sm">
-            <input value="@(Model.Weather.Location)" type="text" class="form-control" id="locationInput">
+            <input value="@(Model.WeatherModel.name)" type="text" class="form-control" id="locationInput">
         </div>
         <div class="col-sm">
             <input id="getWeatherBtn" type="submit" value="Pobierz prognozę" class="btn btn-primary" />
@@ -20,33 +20,48 @@
     <div class="row">
         <p></p>
     </div>
-    <div class="row">
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td>Temperatura</td>
-                    <td>@Model.Weather.Temperature</td>
-                </tr>
-                <tr>
-                    <td>Ciśnienie</td>
-                    <td>@Model.Weather.Pressure</td>
-                </tr>
-                <tr>
-                    <td>Wilgotność</td>
-                    <td>@Model.Weather.Humidity</td>
-                </tr>
 
-            </tbody>
-        </table>
+    <div class="row">
+        @if (Model.WeatherModel.name != null)
+        {
+            <table class="table">
+
+                <tbody>
+                    <tr>
+                        <td>Temperatura</td>
+                        <td>@Model.WeatherModel.main.temp <span>C</span> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="http://openweathermap.org/img/wn/@(Model.WeatherModel.weather.First().icon).png" />
+                            <p>@Model.WeatherModel.weather.First().description</p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        }
+        else
+        {
+            if (Model.WeatherModel.locationInput != null)
+            {
+                <div  class="alert alert-danger">Nieprawidłowa lokalizacja</div>
+            }
+        }
     </div>
 </div>
 </div>
+
+
 <form id="selectLocationForm" action="/">
-    <input type="hidden" name="location" id="locationHid" value="" />
+    <input type="hidden" name="locationInput" id="locationHid" value="" />
+    <input type="hidden" name="units" id="units" value="celcius" />
 </form>
 
 <script>
     $(document).ready(function () {
+        $("#locationInput").focus();
+       
         $('#getWeatherBtn').click(function () {
 
             $('#locationHid').val($('#locationInput').val());

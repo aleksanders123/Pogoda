@@ -59,8 +59,8 @@ namespace aplikacja_pogodowa.Pages
 
     public class WeatherModel
     {
-        public string city { get; set; }
-        public string country { get; set; }
+        public string location { get; set; }
+        public string locationInput { get; set; }
         public Coord coord { get; set; }
         public List<Weather> weather { get; set; }
         public string @base { get; set; }
@@ -89,7 +89,7 @@ namespace aplikacja_pogodowa.Pages
         const string AppId = "431f246a50ff4f5cdc59754224cc9d30";
 
         [BindProperty]
-        public WeatherModel Model { get; set; }
+        public WeatherModel WeatherModel { get; set; }
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -97,14 +97,13 @@ namespace aplikacja_pogodowa.Pages
             _logger = logger;
         }
 
-        public void OnGet(string city, string country)
+        public void OnGet(string locationInput)
         {
             var result = client
-            .GetAsync($"http://api.openweathermap.org/data/2.5/weather?q={city}, {country}&appid={AppId}&units=metric").Result;
+            .GetAsync($"http://api.openweathermap.org/data/2.5/weather?q={locationInput}&appid={AppId}&units=metric&lang=pl").Result;
             string responseStr = result.Content.ReadAsStringAsync().Result;
-            Model = JsonConvert.DeserializeObject<WeatherModel>(responseStr);
-            Model.city = city;
-            Model.country = country;
+            WeatherModel = JsonConvert.DeserializeObject<WeatherModel>(responseStr);
+            WeatherModel.locationInput = locationInput;
         }
     }
 }
