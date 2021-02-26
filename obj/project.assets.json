@@ -224,24 +224,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/michalgredziak/.nuget/packages/": {}
+    "C:\\Users\\Ania\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/michalgredziak/Documents/GitHub/Pogoda/aplikacja_pogodowa.csproj",
+      "projectUniqueName": "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\aplikacja_pogodowa.csproj",
       "projectName": "aplikacja_pogodowa",
-      "projectPath": "/Users/michalgredziak/Documents/GitHub/Pogoda/aplikacja_pogodowa.csproj",
-      "packagesPath": "/Users/michalgredziak/.nuget/packages/",
-      "outputPath": "/Users/michalgredziak/Documents/GitHub/Pogoda/obj/",
+      "projectPath": "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\aplikacja_pogodowa.csproj",
+      "packagesPath": "C:\\Users\\Ania\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/michalgredziak/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Ania\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -283,7 +285,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.21079.7\\RuntimeIdentifierGraph.json"
       }
     }
   }
