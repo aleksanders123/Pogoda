@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Eop4IzOgyEanIubSpJu8/eJK692/uCegnqp2QPy3pwmkc64pTwQybb5Hn3OL9O/JZHDn0Qlk1REE+4lEWdzLCw==",
+  "dgSpecHash": "xwDmMSWrU3JqUUs8oITbJrpT7AsyhU2A3RrzHIR0bLvUblT2GVuahLcGAStwXYtC1WhwDKTHYOAgaNS7qEfD2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\aplikacja_pogodowa.csproj",
+  "projectFilePath": "/Users/michalgredziak/Documents/GitHub/Pogoda/aplikacja_pogodowa.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ania\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.3\\microsoft.aspnetcore.jsonpatch.5.0.3.nupkg.sha512",
-    "C:\\Users\\Ania\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.3\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.3.nupkg.sha512",
-    "C:\\Users\\Ania\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Ania\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
-    "C:\\Users\\Ania\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    "/Users/michalgredziak/.nuget/packages/microsoft.aspnetcore.jsonpatch/5.0.3/microsoft.aspnetcore.jsonpatch.5.0.3.nupkg.sha512",
+    "/Users/michalgredziak/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/5.0.3/microsoft.aspnetcore.mvc.newtonsoftjson.5.0.3.nupkg.sha512",
+    "/Users/michalgredziak/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/michalgredziak/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/michalgredziak/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }

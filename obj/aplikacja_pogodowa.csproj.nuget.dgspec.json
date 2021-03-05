@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\aplikacja_pogodowa.csproj": {}
+    "/Users/michalgredziak/Documents/GitHub/Pogoda/aplikacja_pogodowa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\aplikacja_pogodowa.csproj": {
+    "/Users/michalgredziak/Documents/GitHub/Pogoda/aplikacja_pogodowa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\aplikacja_pogodowa.csproj",
+        "projectUniqueName": "/Users/michalgredziak/Documents/GitHub/Pogoda/aplikacja_pogodowa.csproj",
         "projectName": "aplikacja_pogodowa",
-        "projectPath": "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\aplikacja_pogodowa.csproj",
-        "packagesPath": "C:\\Users\\Ania\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ania\\Desktop\\aplikacja_pogodowa\\obj\\",
+        "projectPath": "/Users/michalgredziak/Documents/GitHub/Pogoda/aplikacja_pogodowa.csproj",
+        "packagesPath": "/Users/michalgredziak/.nuget/packages/",
+        "outputPath": "/Users/michalgredziak/Documents/GitHub/Pogoda/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ania\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/michalgredziak/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.21079.7\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
         }
       }
     }

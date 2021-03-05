@@ -60,6 +60,7 @@ namespace aplikacja_pogodowa.Pages
     public class WeatherModel
     {
         public string location { get; set; }
+        public string unit {get; set;}
         public Coord coord { get; set; }
         public List<Weather> weather { get; set; }
         public string @base { get; set; }
@@ -73,6 +74,7 @@ namespace aplikacja_pogodowa.Pages
         public int id { get; set; }
         public string name { get; set; }
         public int cod { get; set; }
+        public string message   {get; set;}
 
         public WeatherModel()
         {
@@ -95,14 +97,16 @@ namespace aplikacja_pogodowa.Pages
         {
             _logger = logger;
         }
-
-        public void OnGet(string location)
+        public string unit{get; set;}
+        public void OnGet(string location, string unit)
         {
+          
             var result = client
-            .GetAsync($"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={AppId}&units=metric").Result;
+            .GetAsync($"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={AppId}&units={unit}").Result;
             string responseStr = result.Content.ReadAsStringAsync().Result;
             Model = JsonConvert.DeserializeObject<WeatherModel>(responseStr);
             Model.location = location;
+            this.unit = unit;
         }
     }
 }
